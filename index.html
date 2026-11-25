@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sul Lonas | Tendas e Estruturas</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #00025c;
+  color: #ffea2f;
+}
+
+header {
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  width: 190px;
+  background: rgb(226, 213, 34);
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a 
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;}
+
+nav a:hover { color: #ffef14; }
+
+.hero {
+  min-height: 490px;
+  padding: 90px 8%;
+  display: flex;
+  background:
+  linear-gradient(rgba(5, 1, 56, 0.55),
+                  rgba(0, 1, 39, 0.938)),
+  url("fundo.jpg") center/cover no-repeat;
+  align-items: center;
+  
+  linear-gradient(rgba(10, 30, 75, 0.55),
+                  rgba(10, 30, 75, 0.55)),
+  url("fundo.jpg") center/cover no-repeat;
+  background:
+  linear-gradient(#0d01528c,
+                  rgba(2.37% 28.34 293.54 / 0.55)),
+  url("fundo.jpg") center/cover no-repeat;background: linear-gradient(rgba(10, 30, 75, 0.55),
+                  lch(2.37% 28.34 293.54 / 0.55)),
+  url("fundo.jpg") center/cover no-repeat;g, #09265e, #174b
+}
+
+.hero-content { max-width: 650px; }
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  margin-bottom: 20px;
+}
+
+.hero h1 span { color: #ffcf24; }
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffcf24;
+  color: #09265e;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+section { padding: 75px 8%; }
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #fcff42;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: rgb(1, 0, 71);
+  padding: 30px 22px;
+  border-radius: 12px;
+  border-bottom: 4px solid #ffffff;
+  box-shadow: 0 5px 20px #000b2012;
+  transition: .2s;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.card .emoji {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.card p {
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.about {
+  background: #fff23f;
+  text-align: center;
+}
+
+.about p {
+  max-width: 750px;
+  margin: 20px auto;
+  line-height: 1.8;
+  color: #000770;
+  font-size: 17px;
+}
+
+.contact {
+  background: #09265e;
+  color: rgb(252, 215, 93);
+  text-align: center;
+}
+
+.contact p {
+  margin: 15px 0 25px;
+  line-height: 1.7;
+}
+
+.contact a {
+  color: #fade64;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact .btn { color: #f8f9fa; }
+
+footer {
+  background: #061a42;
+  color: rgb(250, 204, 0);
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+@media(max-width: 600px) {
+  header { justify-content: center; }
+  nav { justify-content: center; }
+  .hero { padding: 65px 7%; }
+  section { padding: 55px 7%; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.jpeg" class="logo" alt="Sul Lonas">
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#empresa">Empresa</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1>SUL LONAS <span>!</span></h1>
+    <p>
+      Locação de tendas e estruturas, fabricação,
+      vendas de coberturas e consertos.
+      Soluções para seus eventos e necessidades
+      no Rio Grande do Sul.
+    </p>
+    <a class="btn"
+       href="https://wa.me/5555996308682?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+       target="_blank">
+       SOLICITAR ORÇAMENTO
+    </a>
+  </div>
+</section>
+
+<section id="servicos">
+  <h2 class="section-title">Nossos serviços</h2>
+  <p class="subtitle">
+    Conheça as soluções oferecidas pela Sul Lonas.
+  </p>
+
+  <div class="services">
+
+    <div class="card">
+      <div class="emoji"></div>
+      <h3>Pirâmides</h3>
+      <p>Locação de tendas piramidais para diferentes eventos e necessidades.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji"></div>
+      <h3>Pavilhões</h3>
+      <p>Locação de estruturas para espaços e eventos.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji"></div>
+      <h3>Palcos</h3>
+      <p>Estruturas para apresentações e eventos.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji"></div>
+      <h3>Cortinas</h3>
+      <p>Soluções em cortinas para estruturas e ambientes.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji"></div>
+      <h3>Tablados</h3>
+      <p>Estruturas de tablado para eventos e montagens.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji"></div>
+      <h3>Coberturas</h3>
+      <p>Fabricação e venda de coberturas.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji"> </div>
+      <h3>Consertos</h3>
+      <p>Serviços de conserto de lonas e estruturas.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="empresa">
+  <h2 class="section-title">Conheça a Sul Lonas</h2>
+  <p>
+    A Sul Lonas trabalha com locação de tendas e estruturas,
+    fabricação e venda de coberturas e serviços de consertos.
+    Nosso objetivo é apresentar soluções para eventos e
+    necessidades de cobertura.
+  </p>
+  <a class="btn"
+     href="https://instagram.com/sullonas.sm"
+     target="_blank">
+     VEJA MAIS
+  </a>
+</section>
+
+<section class="contact" id="contato">
+  <h2 class="section-title">Entre em contato</h2>
+  <p>
+    Precisa de tendas, estruturas ou coberturas?<br>
+    Entre em contato com a Sul Lonas!
+  </p>
+
+  <p>
+    WhatsApp: <a href="https://wa.me/5555996308682" target="_blank">
+    (55) 99630-8682</a>
+  </p>
+
+  <p>
+    Instagram: <a href="https://instagram.com/sullonas.sm"
+    target="_blank">@sullonas.sm</a>
+  </p>
+
+  <a class="btn"
+     href="https://wa.me/5555996308682?text=Olá!%20Gostaria%20de%20um%20orçamento."
+     target="_blank">
+     PEDIR ORÇAMENTO PELO WHATSAPP
+  </a>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Sul Lonas - Todos os direitos reservados.</p>
+  <p>Rio Grande do Sul</p>
+</footer>
+
+</body>
+</
+>
